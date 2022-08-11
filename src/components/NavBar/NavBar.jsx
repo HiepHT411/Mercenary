@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.scss";
 import { Link } from "react-router-dom";
-import { Affix, Badge, Col, Row, Space } from "antd";
+import { Affix, Badge, Col, Row } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { useSelector } from "react-redux";
 
@@ -25,9 +25,7 @@ const NavBar = () => {
                 <li>
                   <Link to={"/list/order"}>Đơn hàng</Link>
                 </li>
-                <li>
-                  <Link to={"/"}>Liên hệ</Link>
-                </li>
+              
                 <li className={"navbar-cart"}>
                   <Badge count={cart?.quantity} showZero size="small" style={{ color: "#f7f712"}}>
                     <Link to={"/cart"}>
