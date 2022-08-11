@@ -7,7 +7,8 @@
   margin-bottom: 15px;
 }
 .navbar-wrapper {
-    h2 {
+    h3 {
+
       color: #f7f712;
     }
     a {
@@ -15,22 +16,23 @@
       transition: .3s;
       svg {
         margin-right: 5px;
-        font-size: 16px;
+        font-size: 20px;
       }
     }
     a:hover {
-      color: #ffffff;
+      color: #f7f712;
       text-decoration: none;
     }
     ul {
       margin-bottom: 0;
       li {
-        padding: 14px;
-        margin-right: 12px;
-        width: 150px;
+        padding: 4px;
+        margin-right: 1px;
+        width: 250px;
         display: inline-block;
         text-align: center;
         font-weight: 700;
+        font-size: large;
       }
     }
   }

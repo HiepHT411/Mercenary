@@ -27,6 +27,7 @@ function App() {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/" element={<ListProduct/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

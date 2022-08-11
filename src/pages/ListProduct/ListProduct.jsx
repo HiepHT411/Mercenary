@@ -1,6 +1,7 @@
 import React from 'react';
 import "./ListProduct.scss"
 import {useDispatch, useSelector} from 'react-redux';
+import Footer from '../../components/Footer/Footer';
 import NavBar from '../../components/NavBar/NavBar';
 import { useState } from 'react';
 import { useEffect } from 'react';
