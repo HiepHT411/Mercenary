@@ -28,7 +28,7 @@ function ListProduct (){
         <div className='wrapper-list'>
             <div className="container-list">
                 <div className="title">
-                    <h2>Danh sách sản phẩm</h2>
+                    <h2 style={{ color: "#06a006" }}>Danh sách sản phẩm</h2>
                 </div>
                 <table>
                     <thead>
