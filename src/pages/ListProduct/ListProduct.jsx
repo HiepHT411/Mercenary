@@ -11,6 +11,7 @@ import {addProduct} from "../../redux/features/cartSlice"
 function ListProduct (){
     const dispatch = useDispatch();
     const cart = useSelector((state)=>state.cart)
+    console.log(cart);
     const [quantity,setQuantity] = useState(1)
     const [products, setProducts] = useState(()=>{
         const fetchItems = async()=>{
@@ -21,9 +22,7 @@ function ListProduct (){
     })
     const onClickBuy = ({item})=>{
         dispatch(addProduct({...item,quantity}))
-        alert("Thêm thành công")
     }
-    // console.log(newCart);
     return (
         <div className='wrapper-list'>
             <div className="container-list">

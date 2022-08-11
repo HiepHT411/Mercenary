@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 
 const NavBar = () => {
   const cart = useSelector(state=>state.cart)
-  console.log(cart);
   return (
     <div className="wrapper-nav">
       <Affix>

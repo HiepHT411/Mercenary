@@ -15,3 +15,12 @@ export const getAllProducts = async()=>{
         console.log(error);
     }
 }
+
+export const getProducts = async(data)=>{
+    try {
+        const res = await httpRequest.post(`products/gets`,data)
+        return res;
+    } catch (error) {
+        console.log(error);
+    }
+}

@@ -22,10 +22,10 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-        <Route path="/list/product" element={<ListProduct/>} />
-        <Route path="/list/order" element={<ListOrder/>} />
-        <Route path="/cart" element={<Cart/>} />
-        <Route path="/" element={<ListProduct/>} />
+          <Route path="/list/product" element={<ListProduct/>} />
+          <Route path="/list/order" element={<ListOrder/>} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/" element={<ListProduct/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
