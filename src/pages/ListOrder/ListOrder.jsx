@@ -6,7 +6,9 @@ function ListOrder (){
 
 
     return (
-        <div></div>
+        <div>
+            ListOrders
+        </div>
     );
 }
 

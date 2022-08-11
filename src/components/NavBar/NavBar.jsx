@@ -7,18 +7,11 @@ import { ShoppingCartOutlined } from "@ant-design/icons";
 
 const NavBar = () => {
   return (
-    <>
+    <div className="wrapper-nav">
       <Affix>
         <div className={"navbar-wrapper"}>
-          <Row style={{ padding: "0px 50px" }}>
-            <Col span={4}>
-                <ul>
-                <li>
-                  <h2>Ươm Mầm Cuộc Sống</h2>
-                </li>
-                </ul>
-            </Col>
-            <Col span={8}>
+          <Row style={{  }}>
+            <Col span={24}>
               <ul>
                 
 
@@ -40,48 +33,10 @@ const NavBar = () => {
                 </li>
               </ul>
             </Col>
-            {/* <Col span={12}>
-              <ul>
-                
-                {usersData ? (
-                                    <>
-                                        <Link to={ACCOUNT}>
-                                            <li>
-                                                <UserOutlined />
-                                                MY ACCOUNT
-                                            </li>
-                                        </Link>
-                                        <Link to={BASE} onClick={handleLogout}>
-                                            <li>
-                                                <LogoutOutlined />
-                                                EXIT
-                                            </li>
-                                        </Link>
-                                    </>
-                                ) : (
-                                    <>
-                                        <Link to={LOGIN}>
-                                            <li>
-                                                <Space align={"baseline"}>
-                                                    <LoginOutlined />
-                                                    SIGN IN
-                                                </Space>
-                                            </li>
-                                        </Link>
-                                        <Link to={REGISTRATION}>
-                                            <li>
-                                                <UserAddOutlined />
-                                                SIGN UP
-                                            </li>
-                                        </Link>
-                                    </>
-                                )}
-              </ul>
-            </Col> */}
           </Row>
         </div>
       </Affix>
-    </>
+    </div>
   );
 };
 

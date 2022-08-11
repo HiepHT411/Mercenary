@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import './App.css';
 import { useDispatch } from 'react-redux';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
@@ -19,15 +18,15 @@ function App() {
   // }, [])
 
   return (
-    <div>
-    
-    <BrowserRouter>
-      <Routes>
-      <Route path="/list/product" element={<ListProduct/>} />
-      <Route path="/list/order" element={<ListOrder/>} />
-      <Route path="/cart" element={<Cart/>} />
-      <Route path="/" element={<ListProduct/>} />
-      </Routes>
+    <div className="wrapper">
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+        <Route path="/list/product" element={<ListProduct/>} />
+        <Route path="/list/order" element={<ListOrder/>} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/" element={<ListProduct/>} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
