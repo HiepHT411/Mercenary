@@ -10,17 +10,13 @@ const NavBar = () => {
     <>
       <Affix>
         <div className={"navbar-wrapper"}>
-          <Row style={{ padding: "0px 50px" }}>
-            <Col span={4}>
-                <ul>
-                <li>
-                  <h2>Ươm Mầm Cuộc Sống</h2>
-                </li>
-                </ul>
-            </Col>
-            <Col span={8}>
+          <Row style={{ padding: "5px 50px" }}>
+            
+            <Col span={12}>
               <ul>
-                
+                <li>
+                  <h3>Ươm Mầm Cuộc Sống</h3>
+                </li>
 
                 <li>
                   <Link to={"/list/product"}>Sản phẩm</Link>
@@ -32,9 +28,9 @@ const NavBar = () => {
                   <Link to={"/"}>Liên hệ</Link>
                 </li>
                 <li className={"navbar-cart"}>
-                  <Badge count={0} size="small" color={"red"}>
+                  <Badge count={4} showZero size="small" style={{ color: "#f7f712"}}>
                     <Link to={"/cart"}>
-                    <ShoppingCartOutlined />
+                    <ShoppingCartOutlined  />
                     </Link>
                   </Badge>
                 </li>
