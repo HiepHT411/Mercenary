@@ -6,8 +6,12 @@ import NavBar from '../../components/NavBar/NavBar';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import * as productService from "../../services/productService"
+import {addProduct} from "../../redux/features/cartSlice"
 
 function ListProduct (){
+    const dispatch = useDispatch();
+    const cart = useSelector((state)=>state.cart)
+    const [quantity,setQuantity] = useState(1)
     const [products, setProducts] = useState(()=>{
         const fetchItems = async()=>{
             const res = await productService.getAllProducts();
@@ -16,7 +20,10 @@ function ListProduct (){
         fetchItems();
     })
     const onClickBuy = ({item})=>{
+        dispatch(addProduct({...item,quantity}))
+        alert("Thêm thành công")
     }
+    // console.log(newCart);
     return (
         <div className='wrapper-list'>
             <div className="container-list">
