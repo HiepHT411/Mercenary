@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './components/GlobalStyles/GlobalStyles';
 
+
 // ReactDOM.render(
 //   <Provider store={store}>
 //       <App />

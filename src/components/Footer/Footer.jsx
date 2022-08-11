@@ -13,6 +13,8 @@ const Footer = () => {
                 <Typography.Title level={3}>Chậu cây cảnh đẹp</Typography.Title>
                 <Typography.Text>0912345678</Typography.Text>
                 <Typography.Text className={"mt-12"}>Từ 08:00 tới 20:00 cả cuối tuần và ngày lễ</Typography.Text>
+                <Typography.Text className={"mt-12"}>Địa chỉ: Bách Khoa - Hai Bà Trưng - Hà Nội</Typography.Text>
+
             </Col>
             <Col span={12} >
                 <div className={"footer-wrapper-social"}>

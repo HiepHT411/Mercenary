@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Cart from "./pages/Cart/Cart";
 import ListProduct from "./pages/ListProduct/ListProduct";
 import ListOrder from "./pages/ListOrder/ListOrder";
+import Payment from "./components/Payment/Payment";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/list/product" element={<ListProduct/>} />
         <Route path="/list/order" element={<ListOrder/>} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path={`/checkout/:id`} element={<Payment/>}/>
         <Route path="/" element={<ListProduct/>} />
         </Routes>
         <Footer/>

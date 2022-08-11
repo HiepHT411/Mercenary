@@ -39,5 +39,14 @@
 
 .container {
   background-image: url(./image/background.jpg);
-
+  position:sticky;
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
