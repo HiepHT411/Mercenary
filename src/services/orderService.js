@@ -8,3 +8,12 @@ export const getAll = async()=>{
         console.log(error);
     }
 }
+
+export const store = async(data)=>{
+    try {
+        const res = await httpRequest.post("orders/store",data);
+        return res
+    } catch (error) {
+        console.log(error);
+    }
+}

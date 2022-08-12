@@ -1,14 +1,15 @@
 .wrapper-nav{
   position: fixed;
   top: 0;
-  height: 55px;
+  height: 80px;
   width: 100vw;
   background-color: #005d00;
   margin-bottom: 15px;
 }
 .navbar-wrapper {
-    h3 {
-
+  padding-left: 30px;
+    h4 {
+      padding-top: 16px;
       color: #f7f712;
     }
     a {

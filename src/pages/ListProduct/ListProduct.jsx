@@ -1,17 +1,12 @@
 import React from 'react';
 import "./ListProduct.scss"
-import {useDispatch, useSelector} from 'react-redux';
-import Footer from '../../components/Footer/Footer';
-import NavBar from '../../components/NavBar/NavBar';
+import {useDispatch} from 'react-redux';
 import { useState } from 'react';
-import { useEffect } from 'react';
 import * as productService from "../../services/productService"
 import {addProduct} from "../../redux/features/cartSlice"
 
 function ListProduct (){
     const dispatch = useDispatch();
-    const cart = useSelector((state)=>state.cart)
-    console.log(cart);
     const [quantity,setQuantity] = useState(1)
     const [products, setProducts] = useState(()=>{
         const fetchItems = async()=>{
@@ -27,7 +22,7 @@ function ListProduct (){
         <div className='wrapper-list'>
             <div className="container-list">
                 <div className="title">
-                    <h2>Danh sách sản phẩm</h2>
+                    <h2 style={{ color: "#06a006" }}>Danh sách sản phẩm</h2>
                 </div>
                 <table>
                     <thead>
